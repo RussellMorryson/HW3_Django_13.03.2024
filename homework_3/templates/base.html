@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>
+            {% block title %}
+                Базовый шаблон
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <header>
+            <h2>Django Homework №3 </h2>
+        </header>
+        <div class="content">
+            {% block content %} 
+                Здесь должна быть информация
+            {% endblock %}
+        </div>
+    </body>
+
+    <footer>
+        <h3>This is footer</h3>
+    </footer>
+</html>
